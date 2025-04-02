@@ -1,9 +1,9 @@
 ---
-title: "Categories2"
+title: "CSS"
 layout: category
 permalink: /categories/categories2/
 author_profile: true
-taxonomy: Categories2
+taxonomy: CSS
 sidebar:
   nav: "categories"
 ---
