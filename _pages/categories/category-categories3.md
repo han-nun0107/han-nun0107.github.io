@@ -1,9 +1,9 @@
 ---
-title: "Vanilla JS"
+title: "Categories3"
 layout: category
-permalink: /categories/vanilla JS/
+permalink: /categories/categories3/
 author_profile: true
-taxonomy: Vanilla JS
+taxonomy: Categories3
 sidebar:
   nav: "categories"
 ---

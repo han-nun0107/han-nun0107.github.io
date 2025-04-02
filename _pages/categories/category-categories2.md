@@ -1,9 +1,9 @@
 ---
-title: "CSS"
+title: "Categories2"
 layout: category
-permalink: /categories/CSS/
+permalink: /categories/categories2/
 author_profile: true
-taxonomy: CSS
+taxonomy: Categories2
 sidebar:
   nav: "categories"
 ---
