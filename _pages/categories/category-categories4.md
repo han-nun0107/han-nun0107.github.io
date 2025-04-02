@@ -1,9 +1,9 @@
 ---
-title: "Categories4"
+title: "React+TypeScript"
 layout: category
 permalink: /categories/categories4/
 author_profile: true
-taxonomy: Categories4
+taxonomy: React+TypeScript
 sidebar:
   nav: "categories"
 ---
