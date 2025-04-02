@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cascade Layers 활용 예제</title>
+    <style>
+      /* Cascade Layers를 선언.
+       여기서는 세 개의 레이어를 사용하며, 우선순위는 아래와 같이 결정된다.
+       Base < Theme < Custom */
+      @layer base, theme, custom;
+
+      /* Base Layer: 기본 스타일 가장 낮은 우선순위 */
+      @layer base {
+        h1 {
+          color: blue;
+          font-size: 24px;
+        }
+        p {
+          color: #333;
+          font-size: 16px;
+        }
+      }
+
+      /* Theme Layer: 기본 스타일 위에 적용됨 중간 순위 */
+      @layer theme {
+        h1 {
+          color: green; /* 테마에 따라 녹색으로 변경 */
+        }
+      }
+
+      /* Custom Layer: 사용자 정의 스타일 가장 높은 우선순위 */
+      @layer custom {
+        h1 {
+          color: red; /* 최종적으로 h1은 빨간색으로 덮어쓰여집니다 */
+        }
+        p {
+          font-weight: bold; /* p 태그에 굵은 글씨 적용 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cascade Layers 활용 예제</h1>
+    <p>
+      이 예제에서는 기본(Base), 테마(Theme), 사용자 정의(Custom) 레이어가
+      있습니다. Base에서는 파란색, Theme에서는 녹색, 그리고 Custom에서는
+      빨간색으로 h1 색상을 지정.
+    </p>
+    <p>
+      최종적으로 Custom 레이어가 가장 높은 우선순위를 가지므로, h1은 빨간색으로
+      표시되고, p 태그는 굵은 글씨로 나타납니다.
+    </p>
+  </body>
+</html>
