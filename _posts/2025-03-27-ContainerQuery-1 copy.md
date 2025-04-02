@@ -7,7 +7,7 @@ categories:
 tags:
   - [세부적인 반응형]
 
-permalink: /categories1/CSS-2/
+permalink: /categories2/CSS-2/
 
 toc: true
 toc_sticky: true
