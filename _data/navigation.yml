@@ -1,0 +1,28 @@
+# main links
+main:
+  - title: "Home"
+    url: https://han-nun0107.github.io/
+
+  - title: "About"
+    url: /about/
+
+  - title: "GitHub"
+    url: https://github.com/han-nun0107
+
+  # - title: "Projects"
+  #   url: /projects/
+
+  # - title: "Categories"
+  #   url: /categories/
+
+# sidebar navigation (categories)
+# 2022.02.15 sidebar update : simple ver.
+categories:
+  - title: "HTML"
+    url: /categories/categories1/
+  - title: "CSS"
+    url: /categories/categories2/
+  - title: "Vanilla JS"
+    url: /categories/categories3/
+  - title: "React + TypeScript"
+    url: /categories/categories4/
