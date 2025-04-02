@@ -1,6 +1,6 @@
 ---
 title: "Container Query"
-excerpt: "display: grid와 비슷한 느낌의 반응형 기술"
+excerpt: "display: flex와 비슷한 느낌의 반응형 기술"
 
 categories:
   - CSS
