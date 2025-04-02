@@ -18,11 +18,11 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Categories1"
+  - title: "HTML"
     url: /categories/categories1/
-  - title: "Categories2"
+  - title: "CSS"
     url: /categories/categories2/
-  - title: "Categories3"
+  - title: "VanillaJS"
     url: /categories/categories3/
-  - title: "Categories4"
+  - title: "React+Ts"
     url: /categories/categories4/
