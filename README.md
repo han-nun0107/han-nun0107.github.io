@@ -24,8 +24,8 @@ locale: "ko-KR" #"en-US"
 title: "Blog Name Here" # 상단 헤더에 보이는 블로그 타이틀
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
-name: "한눈" # 블로그 닉네임 설정
-description: "정우수 DevLog" # 블로그 설명
+name: "your name here" # 블로그 닉네임 설정
+description: "OOOOO DevLog" # 블로그 설명
 url: "https://github-account.github.io" # 블로그 URL
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "github-account/github-account.github.io" # GitHub Repo 이름

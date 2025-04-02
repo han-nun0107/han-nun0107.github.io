@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: https://han-nun0107.github.io/
+    url: https://choiiis.github.io/
 
   - title: "About"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/han-nun0107
+    url: https://github.com/choiiis
 
   # - title: "Projects"
   #   url: /projects/
@@ -18,11 +18,11 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "HTML"
+  - title: "Categories1"
     url: /categories/categories1/
-  - title: "CSS"
+  - title: "Categories2"
     url: /categories/categories2/
-  - title: "Vanilla JS"
+  - title: "Categories3"
     url: /categories/categories3/
-  - title: "React + TypeScript"
+  - title: "Categories4"
     url: /categories/categories4/
