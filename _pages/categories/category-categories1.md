@@ -1,9 +1,9 @@
 ---
-title: "Categories1"
+title: "HTML"
 layout: category
 permalink: /categories/categories1/
 author_profile: true
-taxonomy: Categories1
+taxonomy: HTML
 sidebar:
   nav: "categories"
 ---
