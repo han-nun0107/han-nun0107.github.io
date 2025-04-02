@@ -80,7 +80,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: https://han-nun0107.github.io/assets/images/og-thumbnail.png
+og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
