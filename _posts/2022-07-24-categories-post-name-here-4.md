@@ -1,21 +1,173 @@
 ---
-title: "[포스팅 예시] 이곳에 제목을 입력하세요"
-excerpt: "본문의 주요 내용을 여기에 입력하세요"
+title: "npm과 npx 그리고 nvm 공부"
+excerpt: "npm, npx, nvm 정리 등"
 
 categories:
   - React+Ts
 tags:
-  - [tag1, tag2]
+  - [npm, npx, nvm]
 
 permalink: /categories4/post-name-here-4/
 
 toc: true
 toc_sticky: true
 
-date: 2022-07-24
-last_modified_at: 2022-07-24
+date: 2025-04-02
+last_modified_at: 2025-04-02
 ---
 
 ## 🦥 본문
 
-본문은 여기에 ...
+# 📦 npm vs npx 정리
+
+## ✅ npm (Node Package Manager)
+
+> Node.js의 공식 패키지 관리자  
+> JavaScript 패키지를 설치/관리하는 데 사용됨
+
+### 🔧 주요 역할
+
+- 패키지 설치 (로컬 또는 전역)
+- 의존성 관리 (`package.json`)
+- 스크립트 실행 (`npm run`)
+
+### 📌 대표 명령어
+
+| 명령어                      | 설명                                     |
+| --------------------------- | ---------------------------------------- |
+| `npm init`                  | 새 프로젝트 초기화 (`package.json` 생성) |
+| `npm install <패키지명>`    | 로컬 디렉토리에 패키지 설치              |
+| `npm install -g <패키지명>` | 전역으로 패키지 설치                     |
+| `npm uninstall <패키지명>`  | 패키지 제거                              |
+| `npm update`                | 설치된 패키지들 업데이트                 |
+| `npm run <스크립트>`        | 스크립트 실행                            |
+
+### ✅ 예시
+
+```bash
+npm install axios
+```
+
+---
+
+## 🚀 npx (npm package executor)
+
+> 설치 없이 npm 패키지를 바로 실행할 수 있도록 해주는 도구
+
+### 🔍 용도
+
+- 일회성 실행
+- CLI 툴 테스트
+- 글로벌 설치 없이 실행
+
+### 📌 대표 명령어 예시
+
+| 명령어                        | 설명                |
+| ----------------------------- | ------------------- |
+| `npx create-react-app my-app` | React 프로젝트 생성 |
+| `npx eslint .`                | 코드 검사           |
+| `npx cowsay "Hello"`          | CLI 출력            |
+
+---
+
+## ✅ 핵심 차이점
+
+| 비교      | `npm`               | `npx`            |
+| --------- | ------------------- | ---------------- |
+| 역할      | 패키지 설치 및 관리 | 패키지 즉시 실행 |
+| 설치 여부 | 설치 필요           | 설치 없이 실행   |
+| 주 용도   | 의존성 관리         | CLI 툴 실행      |
+
+---
+
+### 🎯 실전 비교
+
+```bash
+npm install create-react-app -g
+create-react-app my-app
+```
+
+vs
+
+```bash
+npx create-react-app my-app
+```
+
+→ **npx는 전역 설치 없이 실행 가능!**
+
+---
+
+## 📝 요약 정리
+
+| 항목      | npm                  | npx            |
+| --------- | -------------------- | -------------- |
+| 설치 여부 | 설치 필요            | 즉시 실행 가능 |
+| 목적      | 패키지 관리          | 실행 테스트    |
+| 주요 명령 | `install`, `run`     | `npx <명령>`   |
+| 사용 예   | `npm install eslint` | `npx eslint .` |
+
+---
+
+# 🔄 NVM (Node.js Version Manager)
+
+> Node.js의 여러 버전을 손쉽게 관리할 수 있도록 해주는 도구  
+> 삭제 / 재설치 없이 원하는 버전으로 전환 가능
+
+### ✅ 장점
+
+- 프로젝트별 Node.js 버전 관리 가능
+- 기존 프로젝트에 영향 없이 새로운 버전 사용 가능
+- 팀원들과의 개발 환경 통일에 유리
+- `lts` = Long Term Support (안정적인 장기 지원 버전)
+
+---
+
+### 💻 macOS
+
+- Node.js 홈페이지 또는 GitHub에서 설치 스크립트 제공
+- 설치 후 `nvm ls-remote`로 설치 가능한 버전 목록 확인 가능
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+---
+
+### 🪟 Windows
+
+- GitHub에서 `nvm-windows` 다운로드: https://github.com/coreybutler/nvm-windows
+- `nvm ls-remote`는 사용 불가 → 홈페이지에서 버전 확인 후 설치
+
+---
+
+### 📦 공통 명령어
+
+| 명령어               | 설명                   |
+| -------------------- | ---------------------- |
+| `nvm install <버전>` | 해당 Node.js 버전 설치 |
+| `nvm use <버전>`     | 해당 버전으로 전환     |
+| `nvm ls`             | 설치된 버전 목록 확인  |
+
+---
+
+# 🔍 npm trends
+
+> 인기 npm 패키지를 비교할 수 있는 사이트  
+> 👉 [https://www.npmtrends.com](https://www.npmtrends.com)
+
+- 여러 패키지의 다운로드 수, 트렌드 분석 가능
+- 어떤 패키지가 인기가 있는지 시각적으로 비교 가능
+
+---
+
+# ⚙️ Emmet 설정 (VS Code)
+
+> JavaScript에서도 Emmet을 쓰고 싶다면 `settings.json`에 아래 설정 추가
+
+```json
+"emmet.includeLanguages": {
+  "javascript": "javascriptreact"
+}
+```
+
+- `.js` 파일에서 `div.class` → `<div class="class"></div>` 자동 완성 가능
