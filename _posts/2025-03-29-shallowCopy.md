@@ -20,7 +20,7 @@ last_modified_at: 2025-03-31
 
 # 🧬 자바스크립트의 얕은 복사 (Shallow Copy)
 
-이 문서는 JavaScript에서 `Object.assign()`이나 전개 연산자(`...`)를 이용한 **얕은 복사(shallow copy)**의 개념을 설명하고 예제와 함께 정리합니다.
+> JavaScript에서 `Object.assign()`이나 전개 연산자(`...`)를 이용한 **얕은 복사(shallow copy)**는 객체를 복사하지만, 참조형 데이터의 경우 동일한 주소를 공유하게 됩니다. 이 문서는 얕은 복사의 개념과 예제를 출력 결과와 함께 정리합니다.
 
 ---
 
@@ -59,15 +59,25 @@ console.log("얕은 복사본1:", shallowCopy1);
 
 ---
 
-## 🔍 예시 요약
+## 🖨️ 출력 결과
 
-- `shallowCopy1.family.push("나")` → `original.family`도 변경됨.
-- `shallowCopy1.age = 31` → 원본은 변하지 않음 (기본형이라 독립적).
+```bash
+원본: { name: '홍길동', age: 30, family: [ '아버지', '어머니', '나' ] }
+얕은 복사본1: { name: '홍길동', age: 30, family: [ '아버지', '어머니', '나' ] }
+
+원본: { name: '홍길동', age: 30, family: [ '아버지', '어머니', '나' ] }
+얕은 복사본1: { name: '홍길동', age: 31, family: [ '아버지', '어머니', '나' ] }
+```
 
 ---
 
-## 💡 참고
+## 🧾 요약
 
-- 깊은 복사(deep copy)가 필요한 경우에는 `structuredClone()`, `lodash.cloneDeep()`, JSON 방식 등을 사용해야 합니다.
+| 구분      | 얕은 복사 (Shallow Copy)        |
+| --------- | ------------------------------- |
+| 기본형    | 값 자체 복사 (독립적)           |
+| 참조형    | 주소 공유 (연결됨)              |
+| 복사 방식 | 전개 연산자(...), Object.assign |
+| 주의사항  | 참조형은 변경 시 원본에도 영향  |
 
 ---
