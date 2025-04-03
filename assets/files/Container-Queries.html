@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Container Queries 예제</title>
+    <style>
+      .container {
+        container-type: inline-size;
+        width: 300px;
+        border: 1px solid #333;
+        padding: 1rem;
+        resize: horizontal; /* 사용자가 수평으로 크기 조절 가능 */
+        overflow: auto;
+        margin-bottom: 1rem;
+      }
+
+      /* 카드 스타일 */
+      .card {
+        background-color: lightblue;
+        padding: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      /* 컨테이너의 너비가 400px 이상일 때만 카드 배경 변경 */
+      @container (min-width: 400px) {
+        .card {
+          background-color: lightgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        이 카드의 배경은 컨테이너 너비가 400px 이상일 때 연두색(lightgreen)으로
+        바뀝니다.
+      </div>
+    </div>
+    <p>컨테이너의 오른쪽 경계를 드래그하여 크기를 조절 하세요</p>
+  </body>
+</html>

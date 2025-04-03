@@ -20,6 +20,8 @@ last_modified_at: 2025-03-27
 
 # 🧩 Media Query vs Container Query
 
+[HTML 파일 보기](/assets/files/Container-Queries.html)
+
 반응형 웹 개발에서 **Media Query**와 **Container Query**는 중요한 도구입니다.  
 각각의 기준점과 활용 방식에 따라 강력한 레이아웃 구현이 가능합니다.
 
