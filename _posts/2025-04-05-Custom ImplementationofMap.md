@@ -18,7 +18,7 @@ last_modified_at: 2025-04-06
 
 ## 🦥 본문
 
-# 🧸 README: 쉽게 배우는 map 함수와 this 이야기!
+# 🧸쉽게 배우는 map 함수와 this 이야기!
 
 ---
 
