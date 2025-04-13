@@ -7,7 +7,7 @@ categories:
 tags:
   - [callback, Higher-order function, VanillaJS, 고차 함수 콜백]
 
-permalink: /categories3/VanillaJS-5/
+permalink: /categories3/VanillaJS-6/
 
 toc: true
 toc_sticky: true

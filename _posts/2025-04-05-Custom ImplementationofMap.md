@@ -7,7 +7,7 @@ categories:
 tags:
   - [callback, map 함수의 사용자 정의 구현, map 함수 안의 this, VanillaJS]
 
-permalink: /categories3/VanillaJS-5/
+permalink: /categories3/VanillaJS-7/
 
 toc: true
 toc_sticky: true
