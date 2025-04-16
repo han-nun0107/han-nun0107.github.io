@@ -1,0 +1,91 @@
+styled components
+React에서 사용되는 대표적인 css-in-js 라이브러리
+JS안에서 CSS를 작성하는 방식
+
+1. 컴포넌트 만들기
+const 컴포넌트이름 = styled.태그종류 `
+css속성1:속성값;
+css속성2:속성값;
+`
+const BlueButton = styled.button`
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+  width: 200px;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+  }
+  &:active {
+    background-color: green;
+  }
+`;
+
+2. 컴포넌트 재사용하기
+const 컴포넌트이름 = styled(재사용할 컴포넌트)`
+추가할 css 속성1: 속성값;
+추가할 css 속성2 : 속성값;
+`
+
+const BigBlueButton = styled(BlueButton)`
+  width: 300px;
+  padding: 20px;
+`;
+
+const BitTextBigBlueButton = styled(BigBlueButton)`
+  font-size: 40px;
+  font-weight: 900;
+`;
+
+3. Props 사용하기
+const 컴포넌트이름 = styled.태그종류`
+css속성:${props => 함수 코드}
+`
+const StyledButton = styled.Button`
+background : ${props=>props.color}
+`
+const PropsButton = styled.button`
+  background-color: ${(props) => props.backgroundColor || `white`};
+  color: ${(props) => props.textColor || "black"};
+`;
+
+4. 전역 스타일 설정하기
+import {createGlobalStyle} from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+전역 Css속성1 : 속성값;
+전역 Css속성2 : 속성값;
+`
+<GlobalStyle /> -> 최상단 컴포넌트에 가져다 쓰기!
+
+const GlobalStyle = createGlobalStyle`
+*{
+  margin: 0;
+  padding: 0;
+}
+input {
+  width: 90%;
+}
+`;
+
+중첩 기능 가능 변수와 mixin은 불가능
+span{
+  color: green;
+  &:hover{
+    background-color: white;
+  }
+}
+
+styled Components 장단점
+
+장점
+css도 컴포넌트화 할 수 있음
+css와 js의 상호작용이 쉬움
+class 이름을 자동으로 지어줌
+
+단점
+css 대비 추가 학습이 필요하다
+Class 이름이 안이쁘다
+JS의 크기가 커진다
