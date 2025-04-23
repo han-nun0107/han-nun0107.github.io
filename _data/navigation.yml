@@ -4,7 +4,7 @@ main:
     url: https://han-nun0107.github.io/
 
   - title: "About"
-    url: https://woo-su-jeong.vercel.app
+    url: /about/
 
   - title: "GitHub"
     url: https://github.com/han-nun0107
