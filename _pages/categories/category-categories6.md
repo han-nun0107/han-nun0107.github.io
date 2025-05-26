@@ -1,9 +1,9 @@
 ---
-title: "기타"
+title: "AWS"
 layout: category
 permalink: /categories/categories6/
 author_profile: true
-taxonomy: 기타
+taxonomy: AWS
 sidebar:
   nav: "categories"
 ---
