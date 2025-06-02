@@ -1,9 +1,9 @@
 ---
-title: "기타"
+title: "Toy Project"
 layout: category
 permalink: /categories/categories8/
 author_profile: true
-taxonomy: 기타
+taxonomy: Troubleshooting
 sidebar:
   nav: "categories"
 ---
