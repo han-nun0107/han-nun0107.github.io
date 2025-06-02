@@ -3,7 +3,7 @@ title: "Weather web Troubleshooting"
 excerpt: "Weather web Troubleshooting"
 
 categories:
-  - CSS
+  - Troubleshooting
 tags:
   - [weather, troubleshooting]
 
